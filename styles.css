@@ -1,0 +1,35 @@
+h1, p{
+ text-align:center;
+ font-size: larger;
+}
+p1{
+  text-align: center;
+  font-weight: 300px;
+  font-size: 200%;
+  color: darkblue;
+}
+
+.game-board{
+    display: grid;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px;
+    margin-left: 200px;
+    
+}
+.button {
+   background:white;
+   border: 1px solid #555;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #AAA;
+   cursor: pointer;
+}
+button:disabled{
+  border: 0.1px solid #0a0a0a;
+  background-color: #837ad1;
+  color: #150238;
+  font-size: 60px;
+}
+
+
