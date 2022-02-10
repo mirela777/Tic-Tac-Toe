@@ -16,7 +16,10 @@ function showMessage(){
 function startGame(){
     currentPlayer = "X";
     document.getElementById("player").innerHTML = currentPlayer; 
-   }
+    for(var i = 0; i <9; i++){
+        document.getElementById(i).style.visibility ="visible";
+    }
+  }
 
 function reply_click(clicked_id) {
      document.getElementById(clicked_id).innerHTML = currentPlayer;
