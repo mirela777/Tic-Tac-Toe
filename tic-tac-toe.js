@@ -20,8 +20,7 @@ function startGame(){
 
 function reply_click(clicked_id) {
      document.getElementById(clicked_id).innerHTML = currentPlayer;
-     numberOfMoves ++;
-        
+     numberOfMoves ++;  
      checkWinner();
      switchPlayer();
      if(numberOfMoves === 9 && availableMoves == true){
@@ -38,16 +37,16 @@ function checkWinner(){
     else if (document.getElementById("3").textContent == document.getElementById("4").textContent && document.getElementById("3").textContent == document.getElementById("5").textContent && document.getElementById("3").textContent != 0){
         availableMoves = false;
         showMessage();
-    }
+     }
     else if(document.getElementById("6").textContent == document.getElementById("7").textContent && document.getElementById("6").textContent == document.getElementById("8").textContent && document.getElementById("6").textContent != 0){
         availableMoves = false;
         showMessage();
     }
-   else if(document.getElementById("0").textContent == document.getElementById("3").textContent && document.getElementById("0").textContent == document.getElementById("6").textContent && document.getElementById("0").textContent != 0){
+    else if(document.getElementById("0").textContent == document.getElementById("3").textContent && document.getElementById("0").textContent == document.getElementById("6").textContent && document.getElementById("0").textContent != 0){
         availableMoves = false;
         showMessage();
     }
-   else if(document.getElementById("1").textContent == document.getElementById("4").textContent && document.getElementById("1").textContent == document.getElementById("7").textContent && document.getElementById("1").textContent != 0){
+    else if(document.getElementById("1").textContent == document.getElementById("4").textContent && document.getElementById("1").textContent == document.getElementById("7").textContent && document.getElementById("1").textContent != 0){
         availableMoves = false;
         showMessage();
     }
