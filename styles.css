@@ -10,6 +10,7 @@ p1{
 }
 
 .game-board{
+    visibility: hidden;
     display: grid;
     grid-template-rows: 80px 80px 80px;
     grid-template-columns: 80px 80px 80px;
